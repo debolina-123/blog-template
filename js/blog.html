@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blogpost.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    <title>e-Medium Blogger's Corner</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span>i-Blog</span>
+
+            <ul>
+                <li><a href="/js/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/js/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="../js/search.html" method="get">
+                <input class="form-input" name="query" type="text" placeholder="Search name/article">
+                <button class="btn">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="post-img">
+        <img src="/img/14.svg" alt="">
+    </div>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto blog-post-content max-width-2 m-auto font-2">
+        <h1>Blogger's Corner</h1>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                <div>
+                    <b>Author - Debolina Saha(CEO Microsoft)</b>
+                </div>
+                <div>03 January. 6 min read</div>
+            </div>
+            <div class="social">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="lb"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 27a12 12 0 1 0 0-24 12 12 0 0 0 0 24zm4.95-16.17a2.67 2.67 0 0 0-4.6 1.84c0 .2.03.41.05.62a7.6 7.6 0 0 1-5.49-2.82 3 3 0 0 0-.38 1.34c.02.94.49 1.76 1.2 2.23a2.53 2.53 0 0 1-1.2-.33v.04c0 1.28.92 2.36 2.14 2.62-.23.05-.46.08-.71.1l-.21-.02-.27-.03a2.68 2.68 0 0 0 2.48 1.86A5.64 5.64 0 0 1 9 19.38a7.62 7.62 0 0 0 4.1 1.19c4.9 0 7.58-4.07 7.57-7.58v-.39c.52-.36.97-.83 1.33-1.38-.48.23-1 .37-1.53.43.56-.33.96-.86 1.15-1.48-.5.31-1.07.53-1.67.66z" fill="#292929"></path></svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="lb"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 27a12 12 0 1 0 0-24 12 12 0 0 0 0 24zm-1.23-6.03V15.6H12v-2.15h1.77v-1.6C13.77 10 14.85 9 16.42 9c.75 0 1.4.06 1.58.08v1.93h-1.09c-.85 0-1.02.43-1.02 1.05v1.38h2.04l-.27 2.15H15.9V21l-2.13-.03z" fill="#292929"></path></svg>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="lb"><path fill-rule="evenodd" clip-rule="evenodd" d="M27 15a12 12 0 1 1-24 0 12 12 0 0 1 24 0zm-14.61 5v-7.42h-2.26V20h2.26zm-1.13-8.44c.79 0 1.28-.57 1.28-1.28-.02-.73-.5-1.28-1.26-1.28-.78 0-1.28.55-1.28 1.28 0 .71.49 1.28 1.25 1.28h.01zM15.88 20h-2.5s.04-6.5 0-7.17h2.5v1.02l-.02.02h.02v-.02a2.5 2.5 0 0 1 2.25-1.18c1.64 0 2.87 1.02 2.87 3.22V20h-2.5v-3.83c0-.97-.36-1.62-1.26-1.62-.69 0-1.1.44-1.28.87-.06.15-.08.36-.08.58v4z" fill="#292929"></path></svg>
+            </div>
+        </div>
+        <p>An API, or application programming interface, is a set of rules that define how applications or devices can
+            connect to and communicate with each other. A REST API is an API that conforms to the design principles of
+            the REST, or representational state transfer architectural style. For this reason, REST APIs are sometimes
+            referred to RESTful APIs.
+
+            First defined in 2000 by computer scientist Dr. Roy Fielding in his doctoral dissertation, REST provides a
+            relatively high level of flexibility and freedom for developers. This flexibility is just one reason why
+            REST APIs have emerged as a common method for connecting components and applications in a microservices
+            architecture.
+            REST design principles
+            At the most basic level, an API is a mechanism that enables an application or service to access a resource
+            within another application or service. The application or service doing the accessing is called the client,
+            and the application or service containing the resource is called the server.
+
+            Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But REST APIs can be developed
+            using virtually any programming language and support a variety of data formats. The only requirement is that
+            they align to the following six REST design principles - also known as architectural constraints:
+
+            Uniform interface. All API requests for the same resource should look the same, no matter where the request
+            comes from. The REST API should ensure that the same piece of data, such as the name or email address of a
+            user, belongs to only one uniform resource identifier (URI). Resources shouldn’t be too large but should
+            contain every piece of information that the client might need.
+            Client-server decoupling. In REST API design, client and server applications must be completely independent
+            of each other. The only information the client application should know is the URI of the requested resource;
+            it can't interact with the server application in any other ways. Similarly, a server application shouldn't
+            modify the client application other than passing it to the requested data via HTTP.
+            Statelessness. REST APIs are stateless, meaning that each request needs to include all the information
+            necessary for processing it. In other words, REST APIs do not require any server-side sessions. Server
+            applications aren’t allowed to store any data related to a client request.
+            Cacheability. When possible, resources should be cacheable on the client or server side. Server responses
+            also need to contain information about whether caching is allowed for the delivered resource. The goal is to
+            improve performance on the client side, while increasing scalability on the server side.
+            Layered system architecture. In REST APIs, the calls and responses go through different layers. As a rule of
+            thumb, don’t assume that the client and server applications connect directly to each other. There may be a
+            number of different intermediaries in the communication loop. REST APIs need to be designed so that neither
+            the client nor the server can tell whether it communicates with the end application or an intermediary.
+            Code on demand (optional). REST APIs usually send static resources, but in certain cases, responses can also
+            contain executable code (such as Java applets). In these cases, the code should only run on-demand.</p>
+    </div>
+
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto">
+        <h2>People who read this also read</h2>
+        <div class="row">
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="/img/cover.svg" alt="lifestyle">
+                </div>
+                <div class="home-article-content center">
+                    <a href="/blogpost.html">
+                        <h3>Lorem Natus,laceat quis est, soluta illum magni a.</h3>
+                    </a>
+                    <span>Author Name</span>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="/img/gym.jpg" alt="lifestyle" style="height:28vh;width:37vh;">
+                </div>
+                <div class="home-article-content center">
+                    <a href="/blogpost.html">
+                        <h3>Lorem Natus,laceat quis est, soluta illum magni a.</h3>
+                    </a>
+                    <span>Author Name</span>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="/img/girl.svg" alt="lifestyle" style="height:28vh;width:37vh;">
+                </div>
+                <div class="home-article-content center">
+                    <a href="/blogpost.html">
+                        <h3>Lorem Natus,laceat quis est, soluta illum magni a.</h3>
+                    </a>
+                    <span>Author Name</span>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; iBlog.com</p>
+        <a href="https://www.vecteezy.com/free-vector/typing">Vector Credits: Vecteezy</a>
+    </div>
+</body>
+
+</html>
